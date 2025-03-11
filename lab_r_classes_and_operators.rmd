@@ -1,0 +1,17 @@
+# Task 1: Create a Custom S3 Class
+
+-   Define a custom S3 class called "Circle" that represents a circle. The class should store the radius of the circle.
+-   Write a constructor function Circle() that takes the radius as input and assigns the class "Circle" to the object.
+-   Write a print.Circle() method to display the radius and area of the circle when the object is printed. Use the formula for the area of a circle: area = π \* radius\^2.
+
+```{r} 
+# Define a constructor for the class
+Circle <- function(x) {
+  structure(x, radius = radius, class = "Circle")
+}
+
+circle <- Circle(x, 5)
+
+circle <- list(radius=5)
+class(circle) <- "Circle"
+```
